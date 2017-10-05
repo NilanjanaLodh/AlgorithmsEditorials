@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
 const int INF = INT_MAX/2;
 
 /**
@@ -43,7 +42,7 @@ vector<int> bellman_ford(const vector< vector<pair<int,int>> > &graph , int sour
 
     for(int pathlen = 1; pathlen<n ;pathlen++)
     {
-        vi new_dist = shortest_distance_so_far;
+        vector<int> new_dist = shortest_distance_so_far;
         for(int v = 0;v<n;v++)
         {
             for(pair<int,int> neighbour : revgraph[v])
