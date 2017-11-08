@@ -12,7 +12,7 @@ You can sell multiple stocks, but for the sake of simplicity let's concentrate o
 You can sell the first stock at any of the days(d) from day 1(0 indexing) to the last day. <br/>
 The profit for that will be  = **(price[d] - min_from_left[d-1])**. 
 After that you have the rest of the days from d+1 for the next remaining transactions. <br/>
-So the total profit if you sell at day d will be = **profit for that first stock + min_from_here[d+1]**
+So the total profit if you sell at day d will be = **profit for that first stock + max_profit_from[d+1]**
 
 This approach has a time complexity of **O(n²)** , as there are O(n) states, and each state takes O(n) time.
 
