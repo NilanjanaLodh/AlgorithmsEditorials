@@ -14,4 +14,4 @@ n is of the order 10<sup>5</sup>.
 
 ### The observations
 
-<img src="bubblesortgraph/editorial.jpg" />
+<img src="editorial.jpg" />
